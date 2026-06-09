@@ -1,19 +1,19 @@
 <template>
   <div class="space-y-8">
     <div class="text-center">
-      <h2 class="text-3xl font-bold text-gray-900">Your Estimate</h2>
-      <p class="mt-2 text-gray-600">Based on your project parameters</p>
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Your Estimate</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Based on your project parameters</p>
     </div>
     
     <EstimateSummary :result="result" />
     
     <div class="card">
-      <h3 class="text-lg font-semibold text-gray-900 mb-4">Timeline</h3>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Timeline</h3>
       <TimelineBar :result="result" />
     </div>
     
     <div class="card">
-      <h3 class="text-lg font-semibold text-gray-900 mb-4">Detailed Breakdown</h3>
+      <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detailed Breakdown</h3>
       <EstimateBreakdown :breakdown="result.breakdown" />
     </div>
     

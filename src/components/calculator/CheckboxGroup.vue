@@ -4,21 +4,21 @@
       v-for="feature in features"
       :key="feature.id"
       class="flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-colors"
-      :class="isSelected(feature.id) ? 'border-primary-500 bg-primary-50' : 'border-gray-200 hover:bg-gray-50'"
+      :class="isSelected(feature.id) ? 'border-primary-500 dark:border-primary-400 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800'"
     >
       <input
         type="checkbox"
         :value="feature.id"
         :checked="isSelected(feature.id)"
         @change="toggle(feature.id)"
-        class="mt-1 h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+        class="mt-1 h-4 w-4 text-primary-600 dark:text-primary-400 focus:ring-primary-500 dark:focus:ring-primary-400 border-gray-300 dark:border-gray-600 rounded"
       />
       <div class="flex-1">
         <div class="flex items-center justify-between">
-          <span class="font-medium text-gray-900">{{ feature.name }}</span>
-          <span class="text-sm font-semibold text-primary-600">+{{ feature.hours }} hrs</span>
+          <span class="font-medium text-gray-900 dark:text-white">{{ feature.name }}</span>
+          <span class="text-sm font-semibold text-primary-600 dark:text-primary-400">+{{ feature.hours }} hrs</span>
         </div>
-        <p class="text-sm text-gray-500 mt-1">{{ feature.description }}</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ feature.description }}</p>
       </div>
     </label>
   </div>

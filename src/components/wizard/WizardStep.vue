@@ -1,15 +1,15 @@
 <template>
   <div class="space-y-6">
     <div class="text-center">
-      <h2 class="text-2xl font-bold text-gray-900">{{ title }}</h2>
-      <p class="mt-2 text-gray-600">{{ description }}</p>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{ title }}</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">{{ description }}</p>
     </div>
     
     <div class="flex justify-center py-8">
       <slot />
     </div>
     
-    <div class="flex justify-between pt-6 border-t border-gray-200">
+    <div class="flex justify-between pt-6 border-t border-gray-200 dark:border-gray-700">
       <button
         v-if="showPrev"
         @click="$emit('prev')"

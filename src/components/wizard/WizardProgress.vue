@@ -12,7 +12,7 @@
           class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold transition-colors"
           :class="{
             'bg-primary-600 text-white': step <= currentStep,
-            'bg-gray-200 text-gray-600': step > currentStep,
+            'bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300': step > currentStep,
           }"
         >
           {{ step }}
@@ -20,11 +20,11 @@
         <div
           v-if="step < totalSteps"
           class="w-8 h-0.5 mx-2"
-          :class="step < currentStep ? 'bg-primary-600' : 'bg-gray-200'"
+          :class="step < currentStep ? 'bg-primary-600 dark:bg-primary-500' : 'bg-gray-200 dark:bg-gray-700'"
         ></div>
       </button>
     </div>
-    <div class="mt-2 text-center text-sm text-gray-500">
+    <div class="mt-2 text-center text-sm text-gray-500 dark:text-gray-400">
       Step {{ currentStep }} of {{ totalSteps }}
     </div>
   </div>

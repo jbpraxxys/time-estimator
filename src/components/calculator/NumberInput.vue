@@ -2,7 +2,7 @@
   <div class="flex items-center gap-3">
     <button
       @click="decrement"
-      class="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-50 transition-colors"
+      class="w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
       :disabled="modelValue <= min"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -16,12 +16,12 @@
       type="number"
       :min="min"
       :max="max"
-      class="w-20 text-center text-2xl font-bold text-gray-900 border-0 bg-transparent focus:ring-0 p-0"
+      class="w-20 text-center text-2xl font-bold text-gray-900 dark:text-white border-0 bg-transparent focus:ring-0 p-0"
     />
     
     <button
       @click="increment"
-      class="w-10 h-10 rounded-lg border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-50 transition-colors"
+      class="w-10 h-10 rounded-lg border border-gray-300 dark:border-gray-600 flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
       :disabled="modelValue >= max"
     >
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -27,15 +27,15 @@
         
         <div v-else-if="wizardStore.state.currentStep === 6" class="space-y-6 w-full max-w-md">
           <div class="flex items-center justify-between">
-            <label class="text-sm font-medium text-gray-700">Home Pages (P4a)</label>
+            <label class="text-sm font-medium text-gray-700 dark:text-gray-200">Home Pages (P4a)</label>
             <NumberInput v-model="p4aValue" :min="0" :max="10" />
           </div>
           <div class="flex items-center justify-between">
-            <label class="text-sm font-medium text-gray-700">Utility Pages (P4b)</label>
+            <label class="text-sm font-medium text-gray-700 dark:text-gray-200">Utility Pages (P4b)</label>
             <NumberInput v-model="p4bValue" :min="0" :max="20" />
           </div>
           <div class="flex items-center justify-between">
-            <label class="text-sm font-medium text-gray-700">Static CMS Pages (P5)</label>
+            <label class="text-sm font-medium text-gray-700 dark:text-gray-200">Static CMS Pages (P5)</label>
             <NumberInput v-model="p5Value" :min="0" :max="50" />
           </div>
         </div>

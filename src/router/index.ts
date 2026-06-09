@@ -25,6 +25,11 @@ const router = createRouter({
       component: () => import('@/views/ScenariosPage.vue'),
     },
     {
+      path: '/tiers',
+      name: 'tiers',
+      component: () => import('@/views/FeatureTiersPage.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('@/views/AboutPage.vue'),

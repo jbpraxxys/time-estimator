@@ -1,10 +1,10 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white dark:bg-gray-800 transition-colors duration-300">
     <div class="text-center mb-8">
-      <h1 class="text-3xl font-bold text-gray-900">Project Estimator</h1>
-      <p class="mt-2 text-gray-600">Answer a few questions to get your time estimate</p>
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Project Estimator</h1>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Answer a few questions to get your time estimate</p>
     </div>
-    
+
     <WizardContainer />
   </div>
 </template>
